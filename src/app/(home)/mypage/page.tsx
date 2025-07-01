@@ -1,3 +1,13 @@
-export default function MyPage() {
-  return <div>마이페이지</div>;
+import { Suspense } from "react";
+
+import MyPageClient from "./MyPageClient";
+
+function MyPage() {
+  return (
+    <Suspense fallback={null}>
+      <MyPageClient />
+    </Suspense>
+  );
 }
+
+export default MyPage;

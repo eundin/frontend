@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 
-import AddressPageClient from "./AddressPageClient";
+import AddressPageClient from "./AddressCheckPageClient";
 
 function AddressPage() {
   return (
