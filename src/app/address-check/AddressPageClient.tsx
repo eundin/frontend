@@ -5,7 +5,7 @@ import Script from "next/script";
 import { useEffect, useRef, useState } from "react";
 
 import BottomButton from "@/components/BottomButton/BottomButton";
-import DeliveryTimeCheck from "@/components/DeliveryTimeCheck/DeliveryTimeCheck";
+import DeliveryStatusChip from "@/components/DeliveryTimeCheck/DeliveryStatusChip";
 import Header from "@/components/Header/Header";
 import BoxedInput from "@/components/Input/BoxedInput";
 import DaumPostcodeEmbed from "@/components/SearchAddress/DaumPostcodeEmbed";
@@ -103,9 +103,12 @@ function AddressPageClient() {
         )}
       </div>
       <div className="mx-5 mt-3">
-        <DeliveryTimeCheck
+        <DeliveryStatusChip
           isDeliveryPossible={isDeliveryPossible}
           isAddressEntered={isAddressEntered}
+          onUnavailableClick={() => {
+            router.push("/address-check/unavailable");
+          }}
         />
       </div>
 
