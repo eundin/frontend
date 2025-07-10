@@ -1,11 +1,11 @@
 import { Suspense } from "react";
 
-import AddressUnavailableClientPage from "./AddressUnavailableClient";
+import UnavailableClientPage from "./UnavailableClient";
 
-export default function AddressUnavailablePage() {
+export default function UnavailablePage() {
   return (
     <Suspense fallback={<div>로딩 중...</div>}>
-      <AddressUnavailableClientPage />
+      <UnavailableClientPage />
     </Suspense>
   );
 }

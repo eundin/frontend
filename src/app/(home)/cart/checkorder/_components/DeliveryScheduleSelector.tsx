@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 import Modal from "@/components/Modal/Modal";
-import TimePickerSimple from "@/components/TimePicker";
+import TimePicker from "@/components/TimePicker";
 
 interface DeliveryScheduleSelectorProps {
   expectedArrivalMinutes: number | null;
@@ -127,7 +127,7 @@ export default function DeliveryScheduleSelector({
             </div>
 
             <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-              <TimePickerSimple
+              <TimePicker
                 initialHour={hour}
                 initialMinute={minute}
                 onConfirm={(h, m) => {

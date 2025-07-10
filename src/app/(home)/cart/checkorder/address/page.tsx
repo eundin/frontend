@@ -1,11 +1,11 @@
 import { Suspense } from "react";
 
-import CheckOrderAddressClientPage from "./CheckOrderAddressClient";
+import AddressClientPage from "./AddressClient";
 
 export default function AddressPage() {
   return (
     <Suspense fallback={<div>로딩 중...</div>}>
-      <CheckOrderAddressClientPage />
+      <AddressClientPage />
     </Suspense>
   );
 }

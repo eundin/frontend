@@ -1,11 +1,11 @@
 import { Suspense } from "react";
 
-import CheckOrderPhoneClientPage from "./CheckOrderPhoneClient";
+import PhoneClientPage from "./PhoneClient";
 
-export default function CheckOrderPhonePage() {
+export default function PhonePage() {
   return (
     <Suspense fallback={<div>로딩 중...</div>}>
-      <CheckOrderPhoneClientPage />
+      <PhoneClientPage />
     </Suspense>
   );
 }
